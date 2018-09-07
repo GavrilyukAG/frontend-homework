@@ -38,4 +38,11 @@ QUnit.module('Тестируем функцию sort', function () {
 		assert.strictEqual(sort('i love frontend'), 'Defnnort Elov I');
 		assert.strictEqual(sort('hello world'), 'Dlorw Ehllo');
 	});
+
+	QUnit.test('Мои тесты', function (assert) {
+		assert.strictEqual(sort('Я хочу СПАТЬ оЧеНь'), 'Апсть Еночь Оухч Я');
+		assert.strictEqual(sort('i WNAT to sLiP'), 'Antw I Ilps Ot');
+		assert.strictEqual(sort('всё хорошо РАБОТАет'), 'Аабеортт Вёс Ооорхш');
+		assert.strictEqual(sort('TP is thE BEST'), 'Best Eht Is Pt');
+	});
 });
